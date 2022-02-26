@@ -10,9 +10,10 @@ func TestFizBuz(t *testing.T) {
 		want    string // 期待する返り値
 		wantErr bool   // エラーになることを期待するかどうか
 	}{
+		"15の倍数ならFizzBuzz": {"15", "FizzBuzz", false},
 		"3の倍数ならFizz":  {"3", "Fizz", false},
 		"5の倍数ならBuzz":  {"5", "Buzz", false},
-		"15の倍数ならBuzz": {"15", "FizzBuzz", false},
+// 		"15の倍数ならBuzz": {"15", "FizzBuzz", false},
 	}
 	for _, tt := range tests {
 		got, err := FizBuz(tt.in)
