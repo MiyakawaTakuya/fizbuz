@@ -42,7 +42,7 @@ func FizBuz(in string) (string, error) {
 		// 5の倍数ならBuzz
 		return "Buzz", nil
 	default:
-		return i, nil
+		return in, nil
 	}
 	return "", fmt.Errorf("判定できませんでした: %s", in)
 }
